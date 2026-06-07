@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfect Cut - A escolha certa de carne, sempre.</title>
+    <meta name="description"
+        content="Perfect Cut - Sistema inteligente de recomendação de cortes de carne para açougues." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="./estilos/style.css" />
+</head>
+
+<body>
+
+    <!-- ============ HEADER ============ -->
+    <header class="top">
+        <div class="container top-inner">
+            <div class="brand">
+                <img src="./midia/logo_bife_s_texto_s_fundo.jpg" alt="Perfect Cut" />
+                <span>PERFECT CUT</span>
+            </div>
+            <nav>
+                <a href="#hero">Início</a>
+                <a href="#form">Recomendação</a>
+                <a href="#butchers">Açougues</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <img src="./midia/logo_cutelo_texto.jpeg " alt="Perfect Cut Logo"
+                class="logo" />
+            <h1>PERFECT CUT</h1>
+            <p class="tagline">"A escolha certa de carne, sempre."</p>
+            <p class="desc">
+                O Perfect Cut é o seu assistente inteligente para escolher o corte ideal de carne.
+                Diga o que você quer cozinhar, seu orçamento e o número de pessoas, e nós cuidamos
+                do resto, com sugestões certeiras para o seu açougue de confiança.
+            </p>
+            <a href="#form" class="btn"><i class="fa-solid fa-utensils"></i> Iniciar Recomendação</a>
+        </div>
+    </section>
+
+    <!-- ============ FORM ============ -->
+    <section id="form">
+        <div class="container">
+            <div class="section-title">
+                <h2>Conte para nós o que você precisa</h2>
+                <p>Quanto mais detalhes, melhor a recomendação. Mas você pode deixar campos em branco também!</p>
+            </div>
+            <form class="form-card" id="recForm" novalidate>
+                <div class="form-grid">
+                    <div class="field">
+                        <label for="purpose"><i class="fa-solid fa-fire"></i> Finalidade</label>
+                        <select id="purpose">
+                            <option value="">Qualquer</option>
+                            <option>Churrasco</option>
+                            <option>Ensopado</option>
+                            <option>Grelhado</option>
+                            <option>Assado</option>
+                            <option>Frito</option>
+                            <option>Cozido</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="flavor"><i class="fa-solid fa-pepper-hot"></i> Preferência de sabor</label>
+                        <select id="flavor">
+                            <option value="">Qualquer</option>
+                            <option>Suave</option>
+                            <option>Médio</option>
+                            <option>Intenso</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="budget"><i class="fa-solid fa-sack-dollar"></i> Orçamento (R$)</label>
+                        <input type="number" id="budget" step="0.01" placeholder="Ex: 150,00" />
+                    </div>
+                    <div class="field">
+                        <label for="people"><i class="fa-solid fa-users"></i> Número de pessoas</label>
+                        <input type="number" id="people" step="1" placeholder="Ex: 4" />
+                    </div>
+                </div>
+                <div class="alert warn" id="alertBox"></div>
+                <div class="form-actions">
+                    <button type="submit" class="btn" id="submitBtn">
+                        <i class="fa-solid fa-bowl-food"></i> Recomendar Corte
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- ============ RESULT ============ -->
+    <section id="result" class="hidden">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nossa Recomendação</h2>
+                <p>O corte ideal para o que você quer preparar</p>
+            </div>
+            <div class="result-main" id="resultMain"></div>
+
+            <div class="section-title" style="margin-top:44px">
+                <h2 style="font-size:1.4rem">Outras opções compatíveis</h2>
+            </div>
+            <div class="alt-grid" id="altGrid"></div>
+
+            <div style="text-align:center;margin-top:34px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+                <button class="btn" id="addAnother"><i class="fa-solid fa-plus"></i> Adicionar outra
+                    recomendação</button>
+                <a href="#butchers" class="btn secondary"><i class="fa-solid fa-shop"></i> Ver açougues parceiros</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SAVED ============ -->
+    <section id="saved" class="hidden">
+        <div class="container">
+            <div class="section-title">
+                <h2>Minhas Sugestões</h2>
+                <p>Todas as recomendações geradas nesta sessão</p>
+            </div>
+            <div class="saved-list" id="savedList"></div>
+        </div>
+    </section>
+
+    <!-- ============ BUTCHERS ============ -->
+    <section id="butchers" class="butchers">
+        <div class="container">
+            <div class="section-title">
+                <h2>Encontre um Açougue Parceiro</h2>
+                <p>Garanta seu corte com quem entende do assunto</p>
+            </div>
+            <div class="butcher-grid">
+                <div class="butcher-card">
+                    <i class="fa-solid fa-shop store"></i>
+                    <h4>Açougue Boi de Ouro</h4>
+                    <p>Rua das Carnes, 123 — Centro</p>
+                    <a class="wpp" href="https://wa.me/5511999990001" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-whatsapp"></i> Entrar em contato
+                    </a>
+                </div>
+                <div class="butcher-card">
+                    <i class="fa-solid fa-shop store"></i>
+                    <h4>Casa do Churrasco</h4>
+                    <p>Av. Brasil, 4567 — Jardim das Flores</p>
+                    <a class="wpp" href="https://wa.me/5511999990002" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-whatsapp"></i> Entrar em contato
+                    </a>
+                </div>  
+                <div class="butcher-card">
+                    <i class="fa-solid fa-shop store"></i>
+                    <h4>Empório da Picanha</h4>
+                    <p>Rua do Sabor, 89 — Vila Nova</p>
+                    <a class="wpp" href="https://wa.me/5511999990003" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-whatsapp"></i> Entrar em contato
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer>
+        <div class="container">
+            <div class="brand">
+                <img src="./midia/logo_bife_s_texto_s_fundo.jpg" alt="Perfect Cut" />
+                <span>PERFECT CUT</span>
+            </div>
+            <p>© 2026 Perfect Cut — A escolha certa de carne, sempre.</p>
+        </div>
+    </footer>
+
+    <script src="./interacao/script.js"></script>
+</body>
+
+</html>
