@@ -62,7 +62,7 @@ A escolha das fontes visa equilibrar o peso visual dos títulos com a legibilida
 ## 5. Diretrizes de Aplicação na Interface Web (CSS)
 Para garantir que o código HTML/CSS respeite estritamente este documento, as seguintes variáveis devem ser declaradas no arquivo de estilos (`style.css`):
 
-css
+'''css
 :root {
   /* Cores */
   --primary-color: #8C0303;     /* Vermelho Carne */
@@ -73,7 +73,8 @@ css
   /* Fontes */
   --font-body: 'Montserrat',system-ui,sans-serif;
 }
-## 6. Usos Incorretos (O que NÃO fazer)
+
+### 6. Usos Incorretos (O que NÃO fazer)
 Para evitar a descaracterização do Perfect Cut, é expressamente proibido:
 
 Distorcer as proporções do logotipo.
