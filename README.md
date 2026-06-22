@@ -77,6 +77,7 @@ Para garantir que o código HTML/CSS respeite estritamente este manual, as segui
 Para evitar a descaracterização do Perfect Cut, é expressamente proibido:
 
 Distorcer as proporções do logotipo (esticar horizontalmente ou verticalmente).
+<img src="app_perfect_cut_atualizado_05-06-26-11am/midia/logo_esticado.jpeg">
 
 Aplicar o logotipo em fundos com baixo contraste (ex: logo vermelha sobre fundo marrom escuro).
 
