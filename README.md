@@ -36,7 +36,7 @@ A marca conta com elementos gráficos que representam o universo dos cortes de c
 As cores foram selecionadas estrategicamente para ativar o aspecto sensorial e garantir um excelente contraste de acessibilidade na web.
 
 ### 3.1. Cores Primárias
-*   **Vermelho Carne / Bordeaux:** `[#8C0303]`
+*   **Vermelho Carne / Bordeaux:** #8C0303
     *   *Significado:* Estimula o apetite, remete à carne fresca e ao calor do preparo/fogo.
 *   **Preto Carvão / Grafite Escuro:** `[#685E5E]`
     *   *Significado:* Traz sofisticação, modernidade e serve como a cor principal para textos  da interface.
