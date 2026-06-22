@@ -36,7 +36,7 @@ A marca conta com elementos gráficos que representam o universo dos cortes de c
 As cores foram selecionadas estrategicamente para ativar o aspecto sensorial e garantir um excelente contraste de acessibilidade na web.
 
 ### 3.1. Cores Primárias
-*   **Vermelho Carne / Bordeaux:** #8C0303
+*   **Vermelho Carne / Bordeaux:** '[#8C0303]'
     *   *Significado:* Estimula o apetite, remete à carne fresca e ao calor do preparo/fogo.
 *   **Preto Carvão / Grafite Escuro:** `[#685E5E]`
     *   *Significado:* Traz sofisticação, modernidade e serve como a cor principal para textos  da interface.
@@ -65,10 +65,10 @@ Para garantir que o código HTML/CSS respeite estritamente este manual, as segui
 ```css
 :root {
   /* Cores */
-  --primary-color: #A21A1A;     /* Vermelho Carne */
-  --secondary-color: #1C1C1C;   /* Preto Carvão */
-  --bg-color: #F9F9F9;          /* Fundo Off-White */
-  --accent-color: #D4AF37;      /* Dourado Destaque */
+  --primary-color: #8C0303;     /* Vermelho Carne */
+  --secondary-color: #685E5E;   /* Preto Carvão */
+  --bg-color: ##F0E4DD;          /* Fundo Off-White */
+  --accent-color: #C8AB66;      /* Dourado Destaque logo */
   
   /* Fontes */
   --font-body: 'Montserrat',system-ui,sans-serif;
