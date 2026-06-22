@@ -60,9 +60,9 @@ A escolha das fontes visa equilibrar o peso visual dos títulos com a legibilida
 ---
 
 ## 5. Diretrizes de Aplicação na Interface Web (CSS)
-Para garantir que o código HTML/CSS respeite estritamente este manual, as seguintes variáveis devem ser declaradas no arquivo de estilos (`style.css`):
+Para garantir que o código HTML/CSS respeite estritamente este documento, as seguintes variáveis devem ser declaradas no arquivo de estilos (`style.css`):
 
-```css
+css
 :root {
   /* Cores */
   --primary-color: #8C0303;     /* Vermelho Carne */
@@ -76,9 +76,12 @@ Para garantir que o código HTML/CSS respeite estritamente este manual, as segui
 ## 6. Usos Incorretos (O que NÃO fazer)
 Para evitar a descaracterização do Perfect Cut, é expressamente proibido:
 
-Distorcer as proporções do logotipo (esticar horizontalmente ou verticalmente).
-<img src="app_perfect_cut_atualizado_05-06-26-11am/midia/logo_esticado.jpeg">
+Distorcer as proporções do logotipo.
+(esticar horizontalmente ou verticalmente deformando o layout da logo).
+![logo esticado](app_perfect_cut_atualizado_05-06-26-11am/midia/logo_esticado.jpeg)
 
-Aplicar o logotipo em fundos com baixo contraste (ex: logo vermelha sobre fundo marrom escuro).
+Aplicar o logotipo em fundos com baixo contraste 
+(ex: logo vermelha sobre fundo marrom essa  escuro tira o destaque da logo).
 
-Utilizar cores que não pertencem à paleta oficial (como azuis ou verdes fluorescentes) nos botões de ação principais do sistema.
+Utilizar cores que não pertencem à paleta oficial.
+(como azuis ou verdes fluorescentes pois descaracteriza a identidade visual da aplicação).
