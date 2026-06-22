@@ -1,4 +1,4 @@
-# 🎨 Manual de Identidade Visual — Perfect Cut
+# 🎨 Documento de Identidade Visual — Perfect Cut
 
 Este documento estabelece as diretrizes visuais, cromáticas e tipográficas para a marca e a plataforma web **Perfect Cut**. O objetivo deste documento é garantir a consistência estética e a integridade da marca em todas as suas aplicações na interface do usuário (UI).
 
@@ -86,3 +86,6 @@ Aplicar o logotipo em fundos com baixo contraste
 
 Utilizar cores que não pertencem à paleta oficial.
 (como azuis ou verdes fluorescentes pois descaracteriza a identidade visual da aplicação).
+
+### 7 - Créditos 
+Organização do documento de identidade visual- Gustavo Pasti dos Santos.
